@@ -46,7 +46,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Additional tags
-      uses: chainguard-images/actions/tag@main
+      uses:  priyawadhwa/actions/tag@speedup-tag
       with:
         distroless_image: ghcr.io/${{ github.repository }}
         docker_image: "php"
